@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grasshopper - Summation</title>
+</head>
+<body>
+    <script>
+        //Grasshopper - Summation
+        //Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+        
+        function Summation(num){
+            let sum = 0;
+            for(let i = 1; i<= num; i++){
+                sum += i;
+            }
+            return sum;
+
+        }
+        document.write(Summation(5)); //1+2+3+4+5 = 15
+        document.write("<br>");
+        document.write(Summation(7));//1+2+3+4+5+6+7 = 28
+    </script>
+</body>
+</html>

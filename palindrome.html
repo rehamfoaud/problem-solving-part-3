@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    <script>
+        //palindrome
+        //A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
+        //For example, “madam” is a palindrome.
+        //Write a function that takes a string as a parameter and returns true if the string is a palindrome, otherwise it returns false.
+        //replace(/[^A-Z0-9]/ig, "") - this will remove all non-alphanumeric characters from the string
+        function palindrome(str){
+
+           return str.toLowerCase() == str.toLowerCase().split(" ").reverse().join("");
+          
+        }
+        document.write(palindrome("Madam"));
+    </script>
+</body>
+</html>
